@@ -6,7 +6,7 @@ React 18 + Vite frontend prototype with Tailwind CSS, Framer Motion, React Three
 
 This project is on your PC here:
 
-`C:\Users\acer\Documents\Codex\2026-04-20-act-as-an-expert-frontend-react`
+`C:\Users\acer\Documents\2026-04-20-act-as-an-expert-frontend-react`
 
 ## Required Downloads
 
@@ -42,7 +42,7 @@ Install these on your PC:
 Open `cmd` and run:
 
 ```bat
-cd /d C:\Users\acer\Documents\Codex\2026-04-20-act-as-an-expert-frontend-react
+cd /d C:\Users\acer\Documents\2026-04-20-act-as-an-expert-frontend-react
 npm install
 npm run dev
 ```
@@ -58,13 +58,13 @@ If port `5173` is busy, Vite may use `5174` or another nearby port.
 ## Build For Production
 
 ```bat
-cd /d C:\Users\acer\Documents\Codex\2026-04-20-act-as-an-expert-frontend-react
+cd /d C:\Users\acer\Documents\2026-04-20-act-as-an-expert-frontend-react
 npm run build
 ```
 
 Production files will be generated in:
 
-`C:\Users\acer\Documents\Codex\2026-04-20-act-as-an-expert-frontend-react\dist`
+`C:\Users\acer\Documents\2026-04-20-act-as-an-expert-frontend-react\dist`
 
 ## Helpful Windows Scripts
 
