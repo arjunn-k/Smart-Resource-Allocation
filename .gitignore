@@ -1,0 +1,11 @@
+node_modules/
+dist/
+build/
+logs/
+.env
+.DS_Store
+vite-dev.log
+
+# Ignore backend env
+server/.env
+server/node_modules/
