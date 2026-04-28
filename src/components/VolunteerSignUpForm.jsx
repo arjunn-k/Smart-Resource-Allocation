@@ -19,6 +19,7 @@ import {
   EyeOff
 } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
+import { API_BASE_URL } from '../config/api';
 
 const categories = [
   { id: 'general', title: 'General Citizen Responder', icon: User, desc: 'Fastest onboarding, no strict affiliation.' },
@@ -120,7 +121,7 @@ const VolunteerSignUpForm = ({ onClose }) => {
   const submitForm = async () => {
     setIsSubmitting(true);
     try {
-      const response = await fetch('http://localhost:5000/api/auth/register', {
+      const response = await fetch(`${API_BASE_URL}/auth/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

@@ -11,8 +11,7 @@ import {
   Users,
 } from 'lucide-react';
 import GlassPanel from './GlassPanel';
-
-const API_BASE_URL = 'http://localhost:5000/api';
+import { API_BASE_URL } from '../config/api';
 
 function normalizeRows(rows) {
   return rows
