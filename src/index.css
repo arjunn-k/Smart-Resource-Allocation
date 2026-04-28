@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply min-h-screen bg-slate-50 text-slate-900 antialiased transition-colors duration-300;
+  background-image:
+    radial-gradient(circle at top left, rgba(6, 182, 212, 0.08), transparent 30%),
+    radial-gradient(circle at top right, rgba(239, 68, 68, 0.05), transparent 25%),
+    linear-gradient(180deg, rgba(248, 250, 252, 0.96), rgba(255, 255, 255, 1));
+}
+
+.dark body {
+  @apply bg-base text-slate-100;
+  background-image:
+    radial-gradient(circle at top left, rgba(6, 182, 212, 0.18), transparent 30%),
+    radial-gradient(circle at top right, rgba(239, 68, 68, 0.12), transparent 25%),
+    linear-gradient(180deg, rgba(2, 6, 23, 0.96), rgba(3, 7, 18, 1));
+}
+
+#root {
+  @apply min-h-screen;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.35);
+}
+
+.glass-panel {
+  @apply border border-black/5 bg-white/50 backdrop-blur-xl shadow-sm transition-colors duration-300;
+}
+
+.dark .glass-panel {
+  @apply border-white/10 bg-white/5 shadow-glow;
+}
+
+.grid-noise {
+  background-image: linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
